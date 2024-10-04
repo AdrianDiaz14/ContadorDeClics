@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contadorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/aumentar1"
+        app:layout_constraintEnd_toStartOf="@+id/botonResetTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonResetTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF8107"
+        android:text="RESET ALL"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/contadorTotal"
+        app:layout_constraintBottom_toTopOf="@id/botonReset1" />
+
+    <TextView
+        android:id="@+id/contador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/contador2"
+        app:layout_constraintEnd_toStartOf="@+id/aumentar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonResetTotal" />
+
+    <Button
+        android:id="@+id/aumentar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintEnd_toStartOf="@+id/botonReset1"
+        app:layout_constraintStart_toEndOf="@id/contador1"
+        app:layout_constraintTop_toBottomOf="@+id/botonResetTotal"
+        app:layout_constraintBottom_toTopOf="@id/aumentar2"/>
+
+    <Button
+        android:id="@+id/botonReset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/aumentar1"
+        app:layout_constraintTop_toBottomOf="@+id/botonResetTotal"
+        app:layout_constraintBottom_toTopOf="@id/botonReset2" />
+
+    <TextView
+        android:id="@+id/contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/contador3"
+        app:layout_constraintEnd_toStartOf="@+id/aumentar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contador1" />
+
+    <Button
+        android:id="@+id/aumentar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toTopOf="@id/aumentar3"
+        app:layout_constraintEnd_toStartOf="@+id/botonReset2"
+        app:layout_constraintStart_toEndOf="@id/contador2"
+        app:layout_constraintTop_toBottomOf="@+id/aumentar1" />
+
+    <Button
+        android:id="@+id/botonReset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toTopOf="@id/botonReset3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/aumentar2"
+        app:layout_constraintTop_toBottomOf="@+id/botonReset1" />
+
+    <TextView
+        android:id="@+id/contador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/contador4"
+        app:layout_constraintEnd_toStartOf="@+id/aumentar3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contador2" />
+
+    <Button
+        android:id="@+id/aumentar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintEnd_toStartOf="@+id/botonReset3"
+        app:layout_constraintStart_toEndOf="@id/contador3"
+        app:layout_constraintTop_toBottomOf="@+id/aumentar2"
+        app:layout_constraintBottom_toTopOf="@id/aumentar4"/>
+
+    <Button
+        android:id="@+id/botonReset3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/aumentar3"
+        app:layout_constraintTop_toBottomOf="@+id/botonReset2"
+        app:layout_constraintBottom_toTopOf="@id/botonReset4"/>
+
+    <TextView
+        android:id="@+id/contador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/aumentar4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contador3"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/aumentar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintEnd_toStartOf="@+id/botonReset4"
+        app:layout_constraintStart_toEndOf="@id/contador4"
+        app:layout_constraintTop_toBottomOf="@+id/aumentar3"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/botonReset4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/aumentar4"
+        app:layout_constraintTop_toBottomOf="@+id/botonReset3"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
